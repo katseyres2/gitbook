@@ -17,7 +17,7 @@ layout:
     visible: true
 ---
 
-# Windows P
+# Windows PrivEsc
 
 ## Introduction
 

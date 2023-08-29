@@ -17,7 +17,7 @@
   * [Introduction to Bash Scripting](hackthebox-academy/tier-1/introduction-to-bash-scripting.md)
 * [2⃣ Tier 2](hackthebox-academy/tier-2/README.md)
   * [Hashcat](hackthebox-academy/tier-2/hashcat.md)
-  * [Windows P](hackthebox-academy/tier-2/windows-p.md)
+  * [Windows PrivEsc](hackthebox-academy/tier-2/windows-privesc.md)
 
 ## HackTheBox App
 
