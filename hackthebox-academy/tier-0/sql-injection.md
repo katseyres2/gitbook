@@ -1,5 +1,10 @@
 ---
+cover: https://academy.hackthebox.com/storage/modules/33/logo.png
+coverY: 0
 layout:
+  cover:
+    visible: true
+    size: hero
   title:
     visible: true
   description:

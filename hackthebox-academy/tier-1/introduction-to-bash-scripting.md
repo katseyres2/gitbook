@@ -1,5 +1,10 @@
 ---
+cover: https://academy.hackthebox.com/storage/modules/21/logo.png
+coverY: 0
 layout:
+  cover:
+    visible: true
+    size: hero
   title:
     visible: true
   description:
@@ -13,8 +18,6 @@ layout:
 ---
 
 # Introduction to Bash Scripting
-
-##
 
 ## Introduction
 

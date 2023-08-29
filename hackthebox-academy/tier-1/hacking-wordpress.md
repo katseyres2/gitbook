@@ -1,9 +1,10 @@
 ---
+cover: https://academy.hackthebox.com/storage/modules/17/logo.png
 coverY: 0
 layout:
   cover:
-    visible: false
-    size: full
+    visible: true
+    size: hero
   title:
     visible: true
   description:
@@ -17,8 +18,6 @@ layout:
 ---
 
 # Hacking WordPress
-
-##
 
 ## Structure
 
