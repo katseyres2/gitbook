@@ -11,6 +11,10 @@
   * [Active Directory](hackthebox-academy/tier-0/active-directory.md)
   * [File Transfers](hackthebox-academy/tier-0/file-transfers.md)
   * [Linux x86 - Buffer Overflow](hackthebox-academy/tier-0/linux-x86-buffer-overflow.md)
+  * [Learning Process](hackthebox-academy/tier-0/learning-process.md)
+* [1⃣ Tier 1](hackthebox-academy/tier-1/README.md)
+  * [Hacking WordPress](hackthebox-academy/tier-1/hacking-wordpress.md)
+  * [Introduction to Bash Scripting](hackthebox-academy/tier-1/introduction-to-bash-scripting.md)
 
 ## HackTheBox App
 
