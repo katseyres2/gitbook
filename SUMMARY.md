@@ -14,7 +14,7 @@
 
 ## HackTheBox App
 
-* [Page 1](hackthebox-app/page-1.md)
+* [Shocker](hackthebox-app/shocker.md)
 
 ## TryHackMe
 
