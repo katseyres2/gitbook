@@ -1,10 +1,10 @@
 ---
 cover: ../.gitbook/assets/Shocker.png
-coverY: 352
+coverY: 263.1893333333333
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:
@@ -19,7 +19,7 @@ layout:
 
 # Shocker
 
-## Information gathering
+## Information
 
 * Add a virtual host.
 
@@ -46,6 +46,8 @@ gobuster dir -u http://shocker.htb/ -w /usr/share/wordlists/dirb/common.txt -o g
 gobuster dir -u http://10.10.10.56/cgi-bin/ -w /usr/share/wordlists/dirb/common.txt -x pl,cgi,sh -o gobuster-cgi-files
 ```
 
+## Exploitation
+
 * The CGI service is vulnerable to CVE-2014-6271
 
 ```
@@ -58,6 +60,9 @@ msf6> run
 ```
 
 * You gain meterpreter access with **shelly**.
+
+## PrivEsc
+
 * Enumerate the sudo permissions of shelly.
 
 ```bash
