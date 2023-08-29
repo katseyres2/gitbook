@@ -1,8 +1,10 @@
 # Table of contents
 
+* [Welcome](README.md)
+
 ## HackTheBox Academy
 
-* [0⃣ Tier 0](README.md)
+* [0⃣ Tier 0](<README (1).md>)
   * [SQL Injection](hackthebox-academy/tier-0/sql-injection.md)
   * [Linux Fundamentals](hackthebox-academy/tier-0/linux-fundamentals.md)
   * [Windows Fundamentals](hackthebox-academy/tier-0/windows-fundamentals.md)
