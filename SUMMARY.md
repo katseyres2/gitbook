@@ -23,19 +23,28 @@
 
 ## HackTheBox App
 
-* [Challenges](hackthebox-app/challenges/README.md)
+* [🌈 Challenges](hackthebox-app/challenges/README.md)
   * [Weak RSA](hackthebox-app/challenges/weak-rsa.md)
   * [Templated](hackthebox-app/challenges/templated.md)
   * [You know 0xDiablos](hackthebox-app/challenges/you-know-0xdiablos.md)
-* [Machines](hackthebox-app/machines/README.md)
+* [🖥 Machines](hackthebox-app/machines/README.md)
   * [Bashed](hackthebox-app/machines/bashed.md)
   * [Blocky](hackthebox-app/machines/blocky.md)
   * [Busqueda](hackthebox-app/machines/busqueda.md)
   * [Cap](hackthebox-app/machines/cap.md)
-  * [Shocker](hackthebox-app/machines/shocker.md)
-  * [routerspace](hackthebox-app/machines/routerspace.md)
+  * [Grandpa](hackthebox-app/machines/grandpa.md)
+  * [Granny](hackthebox-app/machines/granny.md)
+  * [Keeper](hackthebox-app/machines/keeper.md)
   * [Knife](hackthebox-app/machines/knife.md)
+  * [Nibbles](hackthebox-app/machines/nibbles.md)
+  * [Optimum](hackthebox-app/machines/optimum.md)
+  * [Shocker](hackthebox-app/machines/shocker.md)
+  * [Photobomb](hackthebox-app/machines/photobomb.md)
+  * [Pilgrimage](hackthebox-app/machines/pilgrimage.md)
   * [Precious](hackthebox-app/machines/precious.md)
+  * [Routerspace](hackthebox-app/machines/routerspace.md)
+  * [Shoppy](hackthebox-app/machines/shoppy.md)
+  * [Squashed](hackthebox-app/machines/squashed.md)
 
 ## TryHackMe
 

