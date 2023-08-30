@@ -1,6 +1,6 @@
 ---
 cover: ../../.gitbook/assets/Bashed.png
-coverY: 249.05599999999998
+coverY: 177.62133333333333
 layout:
   cover:
     visible: true
