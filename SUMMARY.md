@@ -23,7 +23,19 @@
 
 ## HackTheBox App
 
-* [Shocker](hackthebox-app/shocker.md)
+* [Challenges](hackthebox-app/challenges/README.md)
+  * [Weak RSA](hackthebox-app/challenges/weak-rsa.md)
+  * [Templated](hackthebox-app/challenges/templated.md)
+  * [You know 0xDiablos](hackthebox-app/challenges/you-know-0xdiablos.md)
+* [Machines](hackthebox-app/machines/README.md)
+  * [Bashed](hackthebox-app/machines/bashed.md)
+  * [Blocky](hackthebox-app/machines/blocky.md)
+  * [Busqueda](hackthebox-app/machines/busqueda.md)
+  * [Cap](hackthebox-app/machines/cap.md)
+  * [Shocker](hackthebox-app/machines/shocker.md)
+  * [routerspace](hackthebox-app/machines/routerspace.md)
+  * [Knife](hackthebox-app/machines/knife.md)
+  * [Precious](hackthebox-app/machines/precious.md)
 
 ## TryHackMe
 

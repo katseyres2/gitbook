@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/Shocker.png
+cover: ../../.gitbook/assets/Shocker.png
 coverY: 263.1893333333333
 layout:
   cover:

@@ -30,36 +30,35 @@ The reasons to escalate privileges are :
 3. To gain [NT AUTHORITY\System](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account) level access on a domain-joined machine to gain a foothold into the client's Active Directory environment
 4. To obtain credentials to move laterally or escalate privileges within the client's network
 
-| Tool                                                                                                     | Description                                                                                                                                                                                                                                                                                                               |
-| -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Seatbelt](https://github.com/GhostPack/Seatbelt)                                                        | C# project for performing a wide variety of local privilege escalation checks                                                                                                                                                                                                                                             |
-| [winPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS) | WinPEAS is a script that searches for possible paths to escalate privileges on Windows hosts. All of the checks are explained [here](https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation)                                                                                                          |
-| [PowerUp](https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1)      | PowerShell script for finding common Windows privilege escalation vectors that rely on misconfigurations. It can also be used to exploit some of the issues found                                                                                                                                                         |
-| [SharpUp](https://github.com/GhostPack/SharpUp)                                                          | C# version of PowerUp                                                                                                                                                                                                                                                                                                     |
-| [JAWS](https://github.com/411Hall/JAWS)                                                                  | PowerShell script for enumerating privilege escalation vectors written in PowerShell 2.0                                                                                                                                                                                                                                  |
-| [SessionGopher](https://github.com/Arvanaghi/SessionGopher)                                              | SessionGopher is a PowerShell tool that finds and decrypts saved session information for remote access tools. It extracts PuTTY, WinSCP, SuperPuTTY, FileZilla, and RDP saved session information                                                                                                                         |
-| [Watson](https://github.com/rasta-mouse/Watson)                                                          | Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.                                                                                                                                                                                                    |
-| [LaZagne](https://github.com/AlessandroZ/LaZagne)                                                        | Tool used for retrieving passwords stored on a local machine from web browsers, chat tools, databases, Git, email, memory dumps, PHP, sysadmin tools, wireless network configurations, internal Windows password storage mechanisms, and more                                                                             |
-| [Windows Exploit Suggester - Next Generation](https://github.com/bitsadmin/wesng)                        | WES-NG is a tool based on the output of Windows' `systeminfo` utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 10, including their Windows Server counterparts, is supported                 |
-| [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite)         | We will use several tools from Sysinternals in our enumeration including [AccessChk](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk), [PipeList](https://docs.microsoft.com/en-us/sysinternals/downloads/pipelist), and [PsService](https://docs.microsoft.com/en-us/sysinternals/downloads/psservice) |
+### Tools
+
+* [Seatbelt](https://github.com/GhostPack/Seatbelt) : C# project for performing a wide variety of local privilege escalation checks.
+* [winPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS) : WinPEAS is a script that searches for possible paths to escalate privileges on Windows hosts. All of the checks are explained [here](https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation).
+* [PowerUp](https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1) : PowerShell script for finding common Windows privilege escalation vectors that rely on misconfigurations. It can also be used to exploit some of the issues found.
+* [SharpUp](https://github.com/GhostPack/SharpUp) : C# version of PowerUp.
+* [JAWS](https://github.com/411Hall/JAWS) : PowerShell script for enumerating privilege escalation vectors written in PowerShell 2.0.
+* [SessionGopher](https://github.com/Arvanaghi/SessionGopher) : SessionGopher is a PowerShell tool that finds and decrypts saved session information for remote access tools. It extracts PuTTY, WinSCP, SuperPuTTY, FileZilla, and RDP saved session information.
+* [Watson](https://github.com/rasta-mouse/Watson) : Watson is a .NET tool designed to enumerate missing KBs and suggest exploits for Privilege Escalation vulnerabilities.
+* [LaZagne](https://github.com/AlessandroZ/LaZagne) : Tool used for retrieving passwords stored on a local machine from web browsers, chat tools, databases, Git, email, memory dumps, PHP, sysadmin tools, wireless network configurations, internal Windows password storage mechanisms, and more.
+* [Windows Exploit Suggester - Next Generation](https://github.com/bitsadmin/wesng) : WES-NG is a tool based on the output of Windows' `systeminfo` utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 10, including their Windows Server counterparts, is supported.
+* [Sysinternals Suite](https://docs.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) : We will use several tools from Sysinternals in our enumeration including [AccessChk](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk), [PipeList](https://docs.microsoft.com/en-us/sysinternals/downloads/pipelist), and [PsService](https://docs.microsoft.com/en-us/sysinternals/downloads/psservice).
 
 ### The Lay of the Land
 
 #### Situational Awareness
 
-| Command         | Description                                |
-| --------------- | ------------------------------------------ |
-| `ipconfig /all` | Interfaces, IP addresses, DNS information. |
-| `arp -a`        | ARP table.                                 |
-| `route print`   | Routing table.                             |
+<table data-header-hidden><thead><tr><th width="231"></th><th></th></tr></thead><tbody><tr><td>Command</td><td>Description</td></tr><tr><td><code>ipconfig /all</code></td><td>Interfaces, IP addresses, DNS information.</td></tr><tr><td><code>arp -a</code></td><td>ARP table.</td></tr><tr><td><code>route print</code></td><td>Routing table.</td></tr></tbody></table>
 
 The popular protection solution offered by Microsoft is [AppLocker](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview). Most of modern environments have some sort of anti-virus or Endpoint Detection and Response (EDR) service running to monitor, alert on and block threats.
 
-| Command                                                                       | Description                    |
-| ----------------------------------------------------------------------------- | ------------------------------ |
-| `Get-MpComputerStatus`                                                        | Check Windows Defender status. |
-| `Get-AppLockerPolicy -Effective \| select -ExpandProperty RuleCollections`    | List AppLocker rules.          |
-| `Get-AppLockerPolicy -Local \| Test-AppLockerPolicy -path ... -User Everyone` | Test AppLocker policy.         |
+```powershell
+# check Windows Defender status
+Get-MpComputerStatus
+# list AppLocker rules
+Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
+# test AppLocker policy
+Get-AppLockerPolicy -Local | Test-AppLockerPolicy -path ... -User Everyone
+```
 
 ### Initial Enumeration
 
@@ -100,8 +99,8 @@ You can enumerate network services by using `netstat`. It displays all active TC
 * [SplunkWhisperer2](https://clement.notin.org/blog/2019/02/25/Splunk-Universal-Forwarder-Hijacking-2-SplunkWhisperer2/)
 * [Erlang-arce blogpost from Mubix](https://malicious.link/post/2018/erlang-arce/)
 
-```
-PS> netstat -ano
+```powershell
+netstat -ano
 ```
 
 <figure><img src="../../.gitbook/assets/wp-01.png" alt=""><figcaption></figcaption></figure>

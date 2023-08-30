@@ -55,13 +55,7 @@ References : [https://hashcat.net/wiki/doku.php?id=example\_hashes](https://hash
 
 Sometimes, hashes are stored in certain formats. For example, `hash:salt` or `$id$salt$hash`.
 
-| Pattern | Algorithm                                           |
-| ------- | --------------------------------------------------- |
-| `$1$`   | MD5                                                 |
-| `$2a$`  | Blowfish                                            |
-| `$2y$`  | Blowfish, with correct handling of 8 bit characters |
-| `$5$`   | SHA256                                              |
-| `$6$`   | SHA512                                              |
+<table><thead><tr><th width="172">Pattern</th><th>Algorithm</th></tr></thead><tbody><tr><td><code>$1$</code></td><td>MD5</td></tr><tr><td><code>$2a$</code></td><td>Blowfish</td></tr><tr><td><code>$2y$</code></td><td>Blowfish, with correct handling of 8 bit characters</td></tr><tr><td><code>$5$</code></td><td>SHA256</td></tr><tr><td><code>$6$</code></td><td>SHA512</td></tr></tbody></table>
 
 ```bash
 pip install hashid
@@ -84,13 +78,7 @@ hashcat -0                          # limit the password length to 
 
 The flags `-a` and `-m` specify the type of attack mode.
 
-| Number | Attack Mode            |
-| ------ | ---------------------- |
-| `-a 0` | Straight               |
-| `-a 1` | Combination            |
-| `-a 3` | Brute-force            |
-| `-a 6` | Hybrid Wordlist + Mask |
-| `-a 7` | Hybrid Mask + Wordlist |
+<table><thead><tr><th width="178">Number</th><th>Attack Mode</th></tr></thead><tbody><tr><td><code>-a 0</code></td><td>Straight</td></tr><tr><td><code>-a 1</code></td><td>Combination</td></tr><tr><td><code>-a 3</code></td><td>Brute-force</td></tr><tr><td><code>-a 6</code></td><td>Hybrid Wordlist + Mask</td></tr><tr><td><code>-a 7</code></td><td>Hybrid Mask + Wordlist</td></tr></tbody></table>
 
 The flag `-O` (Optimized Kernels) set the maximum password length to 32. It is recommended to run with `-O` to optimize the process. The flag `-w` (workload).
 
@@ -122,21 +110,23 @@ hashcat -a 0 -m 1400 sha256_hash_example SecLists/Passwords/Leaked-Databases/roc
 
 It is the combination of 2 wordlists.
 
+{% code title="wordlist1" %}
 ```
-# wordlist1
 super
 world
 secret
 ```
+{% endcode %}
 
+{% code title="wordlist2" %}
 ```
-# wordlist2
 hello
 password
 ```
+{% endcode %}
 
+{% code title="wordlist1&2" %}
 ```
-# wordlist1 + wordlist2
 superhello
 superpassword
 worldhello
@@ -144,6 +134,7 @@ wordpassword
 secrethello
 secretpassword
 ```
+{% endcode %}
 
 The commands to create to combination wordlist.
 
@@ -163,16 +154,7 @@ hashcat -a 1 -m 0 combination_md5 wordlist1 wordlist2
 
 ### Mask Attack
 
-| **Placeholder** | **Meaning**                                                 |
-| --------------- | ----------------------------------------------------------- |
-| `?l`            | lower-case ASCII letters (a-z)                              |
-| `?u`            | upper-case ASCII letters (A-Z)                              |
-| `?d`            | digits (0-9)                                                |
-| `?h`            | 0123456789abcdef                                            |
-| `?H`            | 0123456789ABCDEF                                            |
-| `?s`            | special characters («space»!"#$%&'()\*+,-./:;<=>?@\[]^\_\`{ |
-| `?a`            | ?l?u?d?s                                                    |
-| `?b`            | 0x00 - 0xff                                                 |
+<table><thead><tr><th width="154">Placeholder</th><th>Meaning</th></tr></thead><tbody><tr><td><code>?l</code></td><td>lower-case ASCII letters (a-z)</td></tr><tr><td><code>?u</code></td><td>upper-case ASCII letters (A-Z)</td></tr><tr><td><code>?d</code></td><td>digits (0-9)</td></tr><tr><td><code>?h</code></td><td>0123456789abcdef</td></tr><tr><td><code>?H</code></td><td>0123456789ABCDEF</td></tr><tr><td><code>?s</code></td><td>special characters («space»!"#$%&#x26;'()*+,-./:;&#x3C;=>?@[]^_`{</td></tr><tr><td><code>?a</code></td><td>?l?u?d?s</td></tr><tr><td><code>?b</code></td><td>0x00 - 0xff</td></tr></tbody></table>
 
 ```bash
 echo -n 'ILFREIGHTabcxy2015' | md5sum | tr -d " -" > md5_mask_example_hash
@@ -207,18 +189,9 @@ crunch 17 17 ILFREIGHT201%@@@@ -o wordlist
 crunc 12 12 -t 10031998@@@@ -d 1 -o wordlist
 ```
 
-| Symbol | Meaning           |
-| ------ | ----------------- |
-| `%`    | Number            |
-| `@`    | Uppercase letter  |
-| `,`    | Lowercase letter  |
-| `^`    | Special character |
+<table data-header-hidden><thead><tr><th width="210"></th><th></th></tr></thead><tbody><tr><td>Symbol</td><td>Meaning</td></tr><tr><td><code>%</code></td><td>Number</td></tr><tr><td><code>@</code></td><td>Uppercase letter</td></tr><tr><td><code>,</code></td><td>Lowercase letter</td></tr><tr><td><code>^</code></td><td>Special character</td></tr></tbody></table>
 
-| Flag | Meaning               |
-| ---- | --------------------- |
-| `-o` | Output file           |
-| `-t` | Pattern               |
-| `-d` | Amount of repetition. |
+<table data-header-hidden><thead><tr><th width="210"></th><th></th></tr></thead><tbody><tr><td>Flag</td><td>Meaning</td></tr><tr><td><code>-o</code></td><td>Output file</td></tr><tr><td><code>-t</code></td><td>Pattern</td></tr><tr><td><code>-d</code></td><td>Amount of repetition.</td></tr></tbody></table>
 
 ### [CUPP](https://github.com/Mebus/cupp)
 
