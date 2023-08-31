@@ -27,9 +27,7 @@ layout:
 
 </div>
 
-Tu peux rejoindre le groupe informatique de l'école sur Discord ici ! :sunglasses:
-
-{% embed url="https://discord.gg/hWGcRqCe" fullWidth="false" %}
+Tu peux rejoindre le groupe informatique de l'école sur Discord [ici](https://discord.gg/hWGcRqCe) ! :sunglasses:
 
 * Bac 1 (vide)
 * [Bac 2](bac-1/)
