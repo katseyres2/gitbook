@@ -4,7 +4,7 @@
 
 ## HackTheBox Academy
 
-* [Home](hackthebox-academy/home.md)
+* [HackTheBox Academy](hackthebox-academy/hackthebox-academy.md)
 * [🟢 Tier 0](<README (1).md>)
   * [SQL Injection](hackthebox-academy/tier-0/sql-injection.md)
   * [Linux Fundamentals](hackthebox-academy/tier-0/linux-fundamentals.md)
@@ -24,7 +24,7 @@
 
 ## HackTheBox App
 
-* [Home](hackthebox-app/home.md)
+* [HackTheBox App](hackthebox-app/hackthebox-app.md)
 * [🌈 Challenges](hackthebox-app/challenges/README.md)
   * [Weak RSA](hackthebox-app/challenges/weak-rsa.md)
   * [Templated](hackthebox-app/challenges/templated.md)
@@ -78,3 +78,12 @@
   * [Post-exploitation](ine/ejpt/10.-post-exploitation.md)
   * [Social engineering](ine/ejpt/11.-social-engineering.md)
   * [Web application](ine/ejpt/12.-web-application.md)
+
+## ESA
+
+* [ESA Namur](esa/esa-namur.md)
+* [1⃣ Bac](esa/bac.md)
+* [2⃣ Bac](esa/bac-1/README.md)
+  * [Bases des réseaux](esa/bac-1/bases-des-reseaux.md)
+  * [Base de données](esa/bac-1/base-de-donnees.md)
+* [3⃣ Bac](esa/bac-2.md)
