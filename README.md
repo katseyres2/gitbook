@@ -8,15 +8,20 @@ layout:
   title:
     visible: true
   description:
-    visible: false
+    visible: true
   tableOfContents:
-    visible: true
+    visible: false
   outline:
-    visible: true
+    visible: false
   pagination:
-    visible: true
+    visible: false
 ---
 
-# Welcome
+# ☀ Welcome
 
 Welcome on my book page ! :smile:
+
+* [Certification EJPT](ine/ejpt/)
+* [HackTheBox Academy](broken-reference)
+* [HackTheBox Machines](broken-reference)
+* [TryHackMe](broken-reference)

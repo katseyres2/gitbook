@@ -1,9 +1,10 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [☀ Welcome](README.md)
 
 ## HackTheBox Academy
 
+* [Home](hackthebox-academy/home.md)
 * [🟢 Tier 0](<README (1).md>)
   * [SQL Injection](hackthebox-academy/tier-0/sql-injection.md)
   * [Linux Fundamentals](hackthebox-academy/tier-0/linux-fundamentals.md)
@@ -23,6 +24,7 @@
 
 ## HackTheBox App
 
+* [Home](hackthebox-app/home.md)
 * [🌈 Challenges](hackthebox-app/challenges/README.md)
   * [Weak RSA](hackthebox-app/challenges/weak-rsa.md)
   * [Templated](hackthebox-app/challenges/templated.md)
