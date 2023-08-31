@@ -61,29 +61,18 @@
     * [Directory](wiki/enumeration/web/directory.md)
     * [Subdomain](wiki/enumeration/web/subdomain.md)
 
-***
+## INE
 
-* [Import](import/README.md)
-  * [Footprinting and scanning](import/footprinting-and-scanning.md)
-* [Import](import-1/README.md)
-  * [Information gathering](import-1/information-gathering.md)
-* [Import](import-2/README.md)
-  * [Enumeration](import-2/enumeration.md)
-* [Import](import-3/README.md)
-  * [Information gathering](import-3/information-gathering.md)
-
-## Group 1
-
-* [EJPT](group-1/ejpt/README.md)
-  * [1. Information gathering](group-1/ejpt/1.-information-gathering.md)
-  * [2. Footprinting & scanning](group-1/ejpt/2.-footprinting-and-scanning.md)
-  * [3. Enumeration](group-1/ejpt/3.-enumeration.md)
-  * [4. Vulnerability assessment](group-1/ejpt/4.-vulnerability-assessment.md)
-  * [5. Auditing fundamentals](group-1/ejpt/5.-auditing-fundamentals.md)
-  * [6. System/Host based attacks](group-1/ejpt/6.-system-host-based-attacks.md)
-  * [7. Network-based attacks](group-1/ejpt/7.-network-based-attacks.md)
-  * [8. Metasploit Framework (MSF)](group-1/ejpt/8.-metasploit-framework-msf.md)
-  * [9. Exploitation](group-1/ejpt/9.-exploitation.md)
-  * [10. Post-exploitation](group-1/ejpt/10.-post-exploitation.md)
-  * [11. Social engineering](group-1/ejpt/11.-social-engineering.md)
-  * [12. Web application](group-1/ejpt/12.-web-application.md)
+* [EJPT](ine/ejpt/README.md)
+  * [1. Information gathering](ine/ejpt/1.-information-gathering.md)
+  * [2. Footprinting & scanning](ine/ejpt/2.-footprinting-and-scanning.md)
+  * [3. Enumeration](ine/ejpt/3.-enumeration.md)
+  * [4. Vulnerability assessment](ine/ejpt/4.-vulnerability-assessment.md)
+  * [5. Auditing fundamentals](ine/ejpt/5.-auditing-fundamentals.md)
+  * [6. System/Host based attacks](ine/ejpt/6.-system-host-based-attacks.md)
+  * [7. Network-based attacks](ine/ejpt/7.-network-based-attacks.md)
+  * [8. Metasploit Framework (MSF)](ine/ejpt/8.-metasploit-framework-msf.md)
+  * [9. Exploitation](ine/ejpt/9.-exploitation.md)
+  * [10. Post-exploitation](ine/ejpt/10.-post-exploitation.md)
+  * [11. Social engineering](ine/ejpt/11.-social-engineering.md)
+  * [12. Web application](ine/ejpt/12.-web-application.md)
