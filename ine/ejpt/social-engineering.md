@@ -1,4 +1,4 @@
-# 11. Social engineering
+# Social engineering
 
 ### Fundamentals
 
@@ -44,6 +44,9 @@ The goal of social engineering is either to gain access or to gather information
 ### Case studies
 
 * CEO fraud
+
+<figure><img src="../../.gitbook/assets/132.png" alt=""><figcaption></figcaption></figure>
+
 * Robinhood vishing
 * Fake Excel file
 * HTML table Windows logo

