@@ -21,7 +21,8 @@ layout:
 
 Welcome on my book page ! :smile:
 
-* [Certification EJPT](ine/ejpt/)
-* [HackTheBox Academy](broken-reference)
-* [HackTheBox Machines](broken-reference)
-* [TryHackMe](broken-reference)
+* [Certification EJPT](ine/home.md)
+* [HackTheBox Academy](hackthebox-academy/home.md)
+* [HackTheBox Machines](hackthebox-app/home.md)
+* [TryHackMe](tryhackme/home.md)
+* [ESA Namur](esa/accueil.md)

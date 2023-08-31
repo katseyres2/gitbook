@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# ESA Namur
+# Accueil
 
 <div data-full-width="true">
 
@@ -30,5 +30,5 @@ layout:
 Tu peux rejoindre le groupe informatique de l'école sur Discord [ici](https://discord.gg/hWGcRqCe) ! :sunglasses:
 
 * Bac 1 (vide)
-* [Bac 2](bac-1/)
+* [Bac 2](bac-2/)
 * Bac 3 (vide)
