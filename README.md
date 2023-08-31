@@ -20,7 +20,7 @@ layout:
 # ☀ Welcome
 
 Welcome on my page ! :smile:\
-Take a look at my profile if you're interested !
+Take a look at [my profile](my-profile.md) if you're interested !
 
 * [Certification EJPT](ine/home.md)
 * [HackTheBox Academy](hackthebox-academy/home.md)
