@@ -19,7 +19,7 @@ layout:
 
 # ☀ Welcome
 
-Welcome on my page ! :smile:\
+Welcome to my page ! :smile:\
 Take a look at [my profile](my-profile.md) if you're interested !
 
 * [Certification EJPT](ine/home.md)
