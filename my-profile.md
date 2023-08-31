@@ -20,14 +20,14 @@ layout:
 # 📰 My Profile
 
 ```bash
-sherlock@inspector> whoami
-Maximilien Denis 17/04/1998 Male
+root@inspector> whoami
+katseyres
 ```
 
 ## Development
 
 ```bash
-sherlock@inspector> ls -l /home/maximilien/development/backend
+root@inspector> ls -l /home/katseyres/development/backend
 drwxr-xr-x  19 root root  4096 May 26 11:56 .
 drwxr-xr-x  19 root root  4096 May 26 11:56 ..
 drwxr-xr-x   4 root root  4096 Jun  1 06:31 php
@@ -40,7 +40,7 @@ drwxr-xr-x   4 root root  4096 Jun  1 06:31 dart
 ```
 
 ```bash
-sherlock@inspector> ls -l /home/maximilien/development/databases
+root@inspector> ls -l /home/katseyres/development/databases
 drwxr-xr-x  19 root root  4096 May 26 11:56 .
 drwxr-xr-x  19 root root  4096 May 26 11:56 ..
 drwxr-xr-x   4 root root  4096 Jun  1 06:31 postgresql
@@ -49,7 +49,7 @@ drwxr-xr-x   4 root root  4096 Jun  1 06:31 firebase
 ```
 
 ```bash
-sherlock@inspector> ls -l /home/maximilien/development/frontend
+root@inspector> ls -l /home/katseyres/development/frontend
 drwxr-xr-x  19 root root  4096 May 26 11:56 .
 drwxr-xr-x  19 root root  4096 May 26 11:56 ..
 drwxr-xr-x   4 root root  4096 Jun  1 06:31 html
@@ -58,14 +58,14 @@ drwxr-xr-x   4 root root  4096 Jun  1 06:31 javascript
 ```
 
 ```bash
-sherlock@inspector> ls -l /home/maximilien/development/mobile/android
+root@inspector> ls -l /home/katseyres/development/mobile/android
 drwxr-xr-x  19 root root  4096 May 26 11:56 .
 drwxr-xr-x  19 root root  4096 May 26 11:56 ..
 drwxr-xr-x   4 root root  4096 Jun  1 06:31 flutter
 ```
 
 ```bash
-herlock@inspector> ls -l /home/maximilien/development/mobile/android
+root@inspector> ls -l /home/katseyres/system/scripting
 drwxr-xr-x  19 root root  4096 May 26 11:56 .
 drwxr-xr-x  19 root root  4096 May 26 11:56 ..
 drwxr-xr-x  19 root root  4096 May 26 11:56 bash
