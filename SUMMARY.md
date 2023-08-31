@@ -1,7 +1,6 @@
 # Table of contents
 
 * [☀ Welcome](README.md)
-* [📰 My Profile](my-profile.md)
 
 ## HackTheBox Academy
 
