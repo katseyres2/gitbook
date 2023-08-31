@@ -51,6 +51,15 @@
 ## TryHackMe
 
 * [Home](tryhackme/home.md)
+* [Machines](tryhackme/machines/README.md)
+  * [Basic Pentesting](tryhackme/machines/basic-pentesting.md)
+  * [Bounty Hacker](tryhackme/machines/bounty-hacker.md)
+  * [Crack the Hash](tryhackme/machines/crack-the-hash.md)
+  * [Kenobi](tryhackme/machines/kenobi.md)
+  * [Lazy Admin](tryhackme/machines/lazy-admin.md)
+  * [Pickle Rick](tryhackme/machines/pickle-rick.md)
+  * [RootMe](tryhackme/machines/rootme.md)
+  * [Simple CTF](tryhackme/machines/simple-ctf.md)
 
 ## Wiki
 
@@ -62,6 +71,7 @@
   * [Web](wiki/enumeration/web/README.md)
     * [Directory](wiki/enumeration/web/directory.md)
     * [Subdomain](wiki/enumeration/web/subdomain.md)
+* [Docker](wiki/docker.md)
 
 ## INE
 
