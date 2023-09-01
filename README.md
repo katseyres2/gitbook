@@ -22,8 +22,8 @@ layout:
 Welcome to my page ! :smile:
 
 * [Wiki](broken-reference)
-* [Certification EJPT](ine/home.md)
+* [Certification EJPT](broken-reference)
 * [HackTheBox](broken-reference)
-* [TryHackMe](tryhackme/home.md)
-* [ESA Namur](esa/accueil.md)
+* [TryHackMe](broken-reference)
+* [ESA Namur](esa-namur/)
 * [OSCP](broken-reference)
