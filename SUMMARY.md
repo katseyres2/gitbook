@@ -1,19 +1,19 @@
 # Table of contents
 
 * [☀ Welcome](README.md)
+* [Wiki](wiki/README.md)
+  * [Home](wiki/home.md)
+  * [Injection](wiki/injection/README.md)
+    * [Cross Site Scripting](wiki/injection/cross-site-scripting.md)
+  * [Brute-force](wiki/brute-force.md)
+  * [Enumeration](wiki/enumeration/README.md)
+    * [Network](wiki/enumeration/network.md)
+    * [Web](wiki/enumeration/web/README.md)
+      * [Directory](wiki/enumeration/web/directory.md)
+      * [Subdomain](wiki/enumeration/web/subdomain.md)
+  * [Docker](wiki/docker.md)
 
 ## Wiki
-
-* [Home](wiki/home.md)
-* [Injection](wiki/injection/README.md)
-  * [Cross Site Scripting](wiki/injection/cross-site-scripting.md)
-* [Brute-force](wiki/brute-force.md)
-* [Enumeration](wiki/enumeration/README.md)
-  * [Network](wiki/enumeration/network.md)
-  * [Web](wiki/enumeration/web/README.md)
-    * [Directory](wiki/enumeration/web/directory.md)
-    * [Subdomain](wiki/enumeration/web/subdomain.md)
-* [Docker](wiki/docker.md)
 
 ## HackTheBox
 
