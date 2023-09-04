@@ -38,7 +38,7 @@ This is the same architecture of the above list. The cloud takes care of **Physi
 * Workload
 * Services
 * Virtual machine
-* \*\*Management plane : \*\* it is managing functionality for the workload.
+* Management plane : it is managing functionality for the workload.
 * Virtualization
 * Physical infrastructure
 * Physical facility
@@ -240,11 +240,11 @@ The lowest of service. You can can create a virtual machine, then a service, the
 
 ![](../.gitbook/assets/2023-09-04\_13h15\_15.png)
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (10).svg" alt="" class="gitbook-drawing">
 
 ### Cloud Networking
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
 
 ### Cloud Storage
 
@@ -252,4 +252,141 @@ The lowest of service. You can can create a virtual machine, then a service, the
 * Azure : Storage account, managed disks
 * Google Cloud : storage buckets, compute engine disks and images
 
-### Demo : IaaS
+## Cloud Platform Services
+
+### Platform as a Service
+
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+### Application Hosting
+
+**Applications**
+
+<table><thead><tr><th width="272">AWS</th><th width="242.33333333333331">Azure</th><th>Google Cloud</th></tr></thead><tbody><tr><td>Lightsail</td><td>Web Apps</td><td>App Engine</td></tr><tr><td>Batch</td><td>API Apps</td><td>Cloud Functions</td></tr><tr><td>Lambda</td><td>Function Apps</td><td>Workflows</td></tr><tr><td>Beanstalk</td><td>Logic Apps</td><td></td></tr><tr><td></td><td>Batch</td><td></td></tr></tbody></table>
+
+**Containers**
+
+| AWS                        | Azure                     | Google Cloud       |
+| -------------------------- | ------------------------- | ------------------ |
+| Elastic Container Service  | Azure Container Registry  | Cloud Run          |
+| Elastic Container Registry | Azure Container Instances | Container Registry |
+| Elastic Kubernetes Service | Azure Container Services  | Kubernetes Engine  |
+| Fargate                    |                           | Cloud Build        |
+|                            |                           | Cloud Code         |
+
+### Data Hosting
+
+**Applications**
+
+| AWS           | Azure                         | Google Cloud  |
+| ------------- | ----------------------------- | ------------- |
+| Amazon Aurora | Azure SQL database            | Cloud Spanner |
+| Amazon RDS    | Azure Database for PostgreSQL | Cloud SQL     |
+|               | Azure Database for MySQL      |               |
+|               | Azure Database for MariaDB    |               |
+
+**Containers**
+
+| AWS                | Azure             | Google Cloud   |
+| ------------------ | ----------------- | -------------- |
+| Amazon Redshift    | Cosmos DB         | Cloud Bigtable |
+| DynamoDB           | Azure Synapse     | Firestore      |
+| Amazon Elasticache | Azure Redis Cache | Bigquery       |
+| Amazon DocumentDB  |                   | Firebase       |
+| Amazon Keyspaces   |                   | Memorystore    |
+| Amazon Neptune     |                   |                |
+
+### Other Services
+
+* Authentication and identity services
+* Security services
+* Media services
+* Migration services
+* Archiving services
+* Machine learning
+* Cognitive services
+* IoT services
+* ...
+
+## Cloud Application Services
+
+### Software as a Service
+
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+
+### SalesForce
+
+* The leader in customer relations management (CRM)
+* Depending on approach, the biggest SaaS provider
+* Integration through Lightning platform
+* Collaboration, coaching, and training management
+* Online marketplace
+
+### Microsoft 365
+
+* Productivity suite : email, collaboration, file management
+* Online & offline versions of Office products
+* CRM and business process management through Dynamics 365
+* Low-code and no-code customization
+
+### G Suite
+
+* Productivity suite : email, collaboration, file management
+* Highly integrated
+
+### Collaboration
+
+* Slack
+* Zoom
+* Microsoft Teams
+* Google
+* ...
+
+### Others
+
+* Customer relations management
+* Enterprise resource planning
+* Content management systems
+* Accounting
+* Business continuity
+* ...
+
+## Scalability & Availability
+
+### Regional Computing
+
+<figure><img src="../.gitbook/assets/2023-09-04_15h01_37.png" alt=""><figcaption></figcaption></figure>
+
+### Cloud Scale
+
+**Scale on premise**
+
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
+
+**Scale with Cloud**
+
+Thanks to the Cloud Datacenter, it's possible to scale up/down your instance as you wish. Set the CPU, the memory or create new Virtual Machines. Furthermore, you can use the datacenter to compute data with the Lambda function.
+
+<img src="../.gitbook/assets/file.excalidraw (3).svg" alt="" class="gitbook-drawing">
+
+### Cloud Availability
+
+
+
+<img src="../.gitbook/assets/file.excalidraw (4).svg" alt="" class="gitbook-drawing">
+
+<img src="../.gitbook/assets/file.excalidraw (5).svg" alt="" class="gitbook-drawing">
+
+## Cloud Providers
+
+### Azure
+
+<img src="../.gitbook/assets/file.excalidraw (7).svg" alt="" class="gitbook-drawing">
+
+### AWS
+
+<img src="../.gitbook/assets/file.excalidraw (8).svg" alt="" class="gitbook-drawing">
+
+### Google Cloud
+
+<img src="../.gitbook/assets/file.excalidraw (9).svg" alt="" class="gitbook-drawing">
