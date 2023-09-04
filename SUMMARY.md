@@ -19,6 +19,7 @@
       * [Templated](hackthebox/app/challenges/templated.md)
       * [You know 0xDiablos](hackthebox/app/challenges/you-know-0xdiablos.md)
     * [🖥 Machines](hackthebox/app/machines/README.md)
+      * [MonitorsTwo](hackthebox/app/machines/monitorstwo.md)
       * [Bashed](hackthebox/app/machines/bashed.md)
       * [Blocky](hackthebox/app/machines/blocky.md)
       * [Busqueda](hackthebox/app/machines/busqueda.md)
@@ -82,3 +83,5 @@
   * [Social engineering](ejpt/social-engineering.md)
   * [Web application](ejpt/web-application.md)
 * [OSCP](oscp.md)
+* [ICCA](icca/README.md)
+  * [Cloud Foundations](icca/cloud-foundations.md)
