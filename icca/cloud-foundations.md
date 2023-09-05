@@ -5,7 +5,7 @@
 ### Topics
 
 * Introduction
-* Cloud managemetn
+* Cloud management
 * Cloud services
 * Cloud providers
 

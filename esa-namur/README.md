@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# Accueil
+# 📚 ESA Namur
 
 <div data-full-width="true">
 
