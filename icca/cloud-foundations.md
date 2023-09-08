@@ -244,7 +244,7 @@ The lowest of service. You can can create a virtual machine, then a service, the
 
 ### Cloud Networking
 
-<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1) (1).svg" alt="" class="gitbook-drawing">
 
 ### Cloud Storage
 
@@ -256,7 +256,7 @@ The lowest of service. You can can create a virtual machine, then a service, the
 
 ### Platform as a Service
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
 
 ### Application Hosting
 
@@ -312,7 +312,7 @@ The lowest of service. You can can create a virtual machine, then a service, the
 
 ### Software as a Service
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
 
 ### SalesForce
 
@@ -361,7 +361,7 @@ The lowest of service. You can can create a virtual machine, then a service, the
 
 **Scale on premise**
 
-<img src="../.gitbook/assets/file.excalidraw (2).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (2) (1).svg" alt="" class="gitbook-drawing">
 
 **Scale with Cloud**
 

@@ -218,12 +218,57 @@ For one instance, the protections are :&#x20;
 * Resource protection&#x20;
 * Monitoring
 
-
-
 ### Platform Compute Protection
 
 ### Patching
 
+* Infrastructure as a Service
+  * OS : automated option in AWS & Azure
+  * Service : such as web server or database server
+* Platform as a Service
+  * Always patched by the provider
+
 ### Confidential Compute
 
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+
+An enclave is a confidential compute, it allows to put up an encrypted wall around that data while you compute it. It can be done at a hardware/software level. It completely isolates your data that's inside an execution. It runs in an isolated space on the processor & memory.
+
 ### Compute Monitoring
+
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+
+## Regulatory Compliance in the Cloud
+
+### Cloud Provider Regulatry Support
+
+* Cloud tools
+  * Amazon GuardDuty
+  * Azure Compliance Manager
+  * GCP Security Command Center
+* Documentation
+  * Microsoft Trust Center
+  * Amazon Artifact
+  * GCP Compliance Resource Center
+
+### Tenant Responsibilitites
+
+* Understand your regulatory requirements
+* Document provider compliance with regulations
+* Implement your repsonsibilities
+* Use the provider tools to achieve, maintain & document compliance
+
+### Common Protected Data
+
+* Types of data
+  * PII (Personal Identifiable Information)
+  * Health Care (Protected Health Information)
+  * Financial Services (PII, PCI-DSS, Sarbanes Oxley)
+* Business relevance
+  * Intellectual property
+  * Legal considerations
+  * Business reputation
+* Regional considerations
+  * GDPR-EU
+  * California
+  * US Federal Protected Data Type (research, technology, weapon, etc.)
