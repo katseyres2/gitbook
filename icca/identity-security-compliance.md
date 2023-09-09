@@ -230,13 +230,13 @@ For one instance, the protections are :&#x20;
 
 ### Confidential Compute
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
 
 An enclave is a confidential compute, it allows to put up an encrypted wall around that data while you compute it. It can be done at a hardware/software level. It completely isolates your data that's inside an execution. It runs in an isolated space on the processor & memory.
 
 ### Compute Monitoring
 
-<img src="../.gitbook/assets/file.excalidraw (1).svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw (1) (1).svg" alt="" class="gitbook-drawing">
 
 ## Regulatory Compliance in the Cloud
 
