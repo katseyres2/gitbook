@@ -2,6 +2,10 @@
 
 * [☀ Welcome](README.md)
 * [Wiki](wiki/README.md)
+  * [Shells](wiki/shells/README.md)
+    * [TMux](wiki/shells/tmux.md)
+  * [Proxies](wiki/proxies/README.md)
+    * [Proxychains](wiki/proxies/proxychains.md)
   * [Information Gathering](wiki/information-gathering.md)
   * [Vulnerability Assessment](wiki/vulnerability-assessment.md)
   * [Exploitation Tools](wiki/exploitation-tools.md)
