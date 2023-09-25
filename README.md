@@ -27,4 +27,4 @@ Welcome to my page ! :smile:
 * [HackTheBox](hackthebox/)
 * [TryHackMe](tryhackme/)
 * [ESA Namur](esa-namur/)
-* [OSCP](oscp.md)
+* [OSCP](oscp/)
