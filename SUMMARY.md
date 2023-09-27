@@ -109,6 +109,7 @@
   * [Web application](ejpt/web-application.md)
 * [🐲 OSCP](oscp/README.md)
   * [3. Introduction to Cybersecurity](oscp/3.-introduction-to-cybersecurity.md)
+  * [4. Effective Learning Strategies](oscp/4.-effective-learning-strategies.md)
 * [☁ ICCA](icca/README.md)
   * [Cloud Foundations](icca/cloud-foundations.md)
   * [Cloud Management Concepts](icca/cloud-management-concepts.md)
