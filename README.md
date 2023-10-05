@@ -22,9 +22,6 @@ layout:
 Welcome to my page ! :smile:
 
 * [Wiki](wiki/)
-* [EJPT](ejpt/)
-* [ICCA](icca/)
 * [HackTheBox](hackthebox/)
 * [TryHackMe](tryhackme/)
 * [ESA Namur](esa-namur/)
-* [OSCP](oscp/)
