@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# 📚 ESA Namur
+# 🧑🎓 ESA Namur
 
 <div data-full-width="true">
 

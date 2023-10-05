@@ -17,9 +17,9 @@ layout:
     visible: false
 ---
 
-# ☀ Welcome
+# Welcome
 
-Welcome to my page ! :smile:
+Welcome to my page! :smile:
 
 * [Wiki](wiki/)
 * [HackTheBox](hackthebox/)
