@@ -24,6 +24,7 @@
   * [Privilege Escalation](wiki/privilege-escalation.md)
   * [Maintaining Access](wiki/maintaining-access.md)
   * [Reporting](wiki/reporting.md)
+  * [iptables](wiki/iptables.md)
 * [👽 HackTheBox](hackthebox/README.md)
   * [App](hackthebox/app/README.md)
     * [🌈 Challenges](hackthebox/app/challenges/README.md)
