@@ -22,6 +22,6 @@ layout:
 Welcome to my page! :smile:
 
 * [Wiki](wiki/)
-* [HackTheBox](hackthebox/)
-* [TryHackMe](tryhackme/)
-* [ESA Namur](esa-namur/)
+* [HackTheBox](group-1/hackthebox/)
+* [TryHackMe](group-1/tryhackme/)
+* [ESA Namur](group-1/esa-namur/)
