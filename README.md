@@ -1,27 +1,7 @@
 ---
-cover: .gitbook/assets/pikachu.gif
+cover: ../../.gitbook/assets/teahub.io-wallpaper-hack-777773.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: false
-  pagination:
-    visible: false
 ---
 
-# Welcome
+# HackTheBox
 
-Welcome to my page! :smile:
-
-* [Wiki](wiki/)
-* [HackTheBox](group-1/hackthebox/)
-* [TryHackMe](group-1/tryhackme/)
-* [ESA Namur](group-1/esa-namur/)
