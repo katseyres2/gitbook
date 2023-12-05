@@ -36,7 +36,6 @@
       * [Getting started](group-1/hackthebox/academy/tier-0/getting-started.md)
       * [FUFF - Web Apps](group-1/hackthebox/academy/tier-0/fuff-web-apps.md)
       * [Active Directory](group-1/hackthebox/academy/tier-0/active-directory.md)
-      * [File Transfers](group-1/hackthebox/academy/tier-0/file-transfers.md)
       * [Linux x86 - Buffer Overflow](group-1/hackthebox/academy/tier-0/linux-x86-buffer-overflow.md)
       * [Learning Process](group-1/hackthebox/academy/tier-0/learning-process.md)
     * [🟡 Tier 1](group-1/hackthebox/academy/tier-1/README.md)
