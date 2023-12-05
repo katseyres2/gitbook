@@ -34,7 +34,6 @@
       * [Linux Fundamentals](group-1/hackthebox/academy/tier-0/linux-fundamentals.md)
       * [Windows Fundamentals](group-1/hackthebox/academy/tier-0/windows-fundamentals.md)
       * [Getting started](group-1/hackthebox/academy/tier-0/getting-started.md)
-      * [FUFF - Web Apps](group-1/hackthebox/academy/tier-0/fuff-web-apps.md)
       * [Active Directory](group-1/hackthebox/academy/tier-0/active-directory.md)
       * [Learning Process](group-1/hackthebox/academy/tier-0/learning-process.md)
     * [🟡 Tier 1](group-1/hackthebox/academy/tier-1/README.md)
