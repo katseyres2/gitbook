@@ -11,7 +11,6 @@
     * [🖥 Machines](group-1/hackthebox/app/machines/README.md)
       * [CozyHosting](group-1/hackthebox/app/machines/cozyhosting.md)
       * [MonitorsTwo](group-1/hackthebox/app/machines/monitorstwo.md)
-      * [Bashed](group-1/hackthebox/app/machines/bashed.md)
       * [Blocky](group-1/hackthebox/app/machines/blocky.md)
       * [Busqueda](group-1/hackthebox/app/machines/busqueda.md)
       * [Cap](group-1/hackthebox/app/machines/cap.md)
