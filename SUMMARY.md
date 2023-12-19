@@ -13,7 +13,6 @@
       * [MonitorsTwo](group-1/hackthebox/app/machines/monitorstwo.md)
       * [Blocky](group-1/hackthebox/app/machines/blocky.md)
       * [Busqueda](group-1/hackthebox/app/machines/busqueda.md)
-      * [Cap](group-1/hackthebox/app/machines/cap.md)
       * [Grandpa](group-1/hackthebox/app/machines/grandpa.md)
       * [Granny](group-1/hackthebox/app/machines/granny.md)
       * [Keeper](group-1/hackthebox/app/machines/keeper.md)
