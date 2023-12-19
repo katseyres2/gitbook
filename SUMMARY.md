@@ -24,7 +24,6 @@
       * [Pilgrimage](group-1/hackthebox/app/machines/pilgrimage.md)
       * [Precious](group-1/hackthebox/app/machines/precious.md)
       * [Routerspace](group-1/hackthebox/app/machines/routerspace.md)
-      * [Shoppy](group-1/hackthebox/app/machines/shoppy.md)
       * [Squashed](group-1/hackthebox/app/machines/squashed.md)
   * [Academy](group-1/hackthebox/academy/README.md)
     * [Page](group-1/hackthebox/academy/page.md)
