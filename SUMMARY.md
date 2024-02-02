@@ -16,7 +16,6 @@
       * [Keeper](group-1/hackthebox/app/machines/keeper.md)
       * [Nibbles](group-1/hackthebox/app/machines/nibbles.md)
       * [Optimum](group-1/hackthebox/app/machines/optimum.md)
-      * [Shocker](group-1/hackthebox/app/machines/shocker.md)
       * [Photobomb](group-1/hackthebox/app/machines/photobomb.md)
       * [Pilgrimage](group-1/hackthebox/app/machines/pilgrimage.md)
       * [Precious](group-1/hackthebox/app/machines/precious.md)
