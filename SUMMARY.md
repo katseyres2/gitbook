@@ -10,7 +10,6 @@
       * [You know 0xDiablos](group-1/hackthebox/app/challenges/you-know-0xdiablos.md)
     * [🖥 Machines](group-1/hackthebox/app/machines/README.md)
       * [MonitorsTwo](group-1/hackthebox/app/machines/monitorstwo.md)
-      * [Busqueda](group-1/hackthebox/app/machines/busqueda.md)
       * [Grandpa](group-1/hackthebox/app/machines/grandpa.md)
       * [Granny](group-1/hackthebox/app/machines/granny.md)
       * [Keeper](group-1/hackthebox/app/machines/keeper.md)
