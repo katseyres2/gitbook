@@ -14,7 +14,6 @@
       * [Grandpa](group-1/hackthebox/app/machines/grandpa.md)
       * [Granny](group-1/hackthebox/app/machines/granny.md)
       * [Keeper](group-1/hackthebox/app/machines/keeper.md)
-      * [Knife](group-1/hackthebox/app/machines/knife.md)
       * [Nibbles](group-1/hackthebox/app/machines/nibbles.md)
       * [Optimum](group-1/hackthebox/app/machines/optimum.md)
       * [Shocker](group-1/hackthebox/app/machines/shocker.md)
