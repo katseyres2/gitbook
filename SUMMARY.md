@@ -3,15 +3,9 @@
 ## Group 1
 
 * [HackTheBox](README.md)
-  * [App](group-1/hackthebox/app/README.md)
-    * [🌈 Challenges](group-1/hackthebox/app/challenges/README.md)
-      * [Weak RSA](group-1/hackthebox/app/challenges/weak-rsa.md)
-      * [Templated](group-1/hackthebox/app/challenges/templated.md)
-      * [You know 0xDiablos](group-1/hackthebox/app/challenges/you-know-0xdiablos.md)
   * [Academy](group-1/hackthebox/academy/README.md)
     * [Page](group-1/hackthebox/academy/page.md)
     * [🟢 Tier 0](group-1/hackthebox/academy/tier-0/README.md)
-      * [Linux Fundamentals](group-1/hackthebox/academy/tier-0/linux-fundamentals.md)
       * [Windows Fundamentals](group-1/hackthebox/academy/tier-0/windows-fundamentals.md)
       * [Getting started](group-1/hackthebox/academy/tier-0/getting-started.md)
       * [Active Directory](group-1/hackthebox/academy/tier-0/active-directory.md)
@@ -20,7 +14,6 @@
       * [WordPress](group-1/hackthebox/academy/tier-1/wordpress.md)
       * [Bash Scripting](group-1/hackthebox/academy/tier-1/bash-scripting.md)
     * [🟠 Tier 2](group-1/hackthebox/academy/tier-2/README.md)
-      * [Hashcat](group-1/hackthebox/academy/tier-2/hashcat.md)
       * [Windows PrivEsc](group-1/hackthebox/academy/tier-2/windows-privesc.md)
 * [TryHackMe](group-1/tryhackme/README.md)
   * [Basic Pentesting](group-1/tryhackme/basic-pentesting.md)
