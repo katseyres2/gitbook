@@ -19,7 +19,6 @@
   * [Bac 1](group-1/esa-namur/bac-1.md)
   * [Bac 2](group-1/esa-namur/bac-2/README.md)
     * [Bases des réseaux](group-1/esa-namur/bac-2/bases-des-reseaux.md)
-    * [Base de données](group-1/esa-namur/bac-2/base-de-donnees.md)
   * [Bac 3](group-1/esa-namur/bac-3/README.md)
     * [TGPR](group-1/esa-namur/bac-3/tgpr.md)
     * [MANG](group-1/esa-namur/bac-3/mang.md)
